@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <header>
+      <a href="#home" class="logo">Portfolio</a>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#aboutMe">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#testimonial">Testimonial</a></li>
+        <li><a href="#contactUs">Contact us</a></li>
+      </ul>
+    </header>
+
+    <section class="banner" id="home">
+      <div class="textBx">
+        <h2>Hello I`m<br><span>Nadtoka D.</span></h2>
+        <h3>I`m a Front End Developer.</h3>
+        <a href="#aboutMe" class="btn">About me</a>
+      </div>
+    </section>
+    <section class="about" id="aboutMe">
+      <div class="heading">
+        <h2>About me</h2>
+      </div>
+      <div class="content">
+        <div class="contentBx w50">
+          <h3>I`m Front End Developer</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt aut ipsam, iusto nihil quis aperiam repudiandae tempora sint ab consequuntur architecto optio non quisquam voluptatibus nam sunt, id cupiditate eligendi!</p>
+        </div>
+        <div class="w50">
+          <img src="./images/img2.jpg" >
+        </div>
+      </div>      
+    </section>
+
+    <section class="services" id="services">
+      <div class="heading white">
+        <h2>Our Services</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet a vel moll</p>
+      </div>
+      <div class="content">
+        <div class="serviceBx">
+          <img src="./images/icon1.png" >
+          <h2>Web Design</h2>
+          <p>Coming soon</p>
+        </div>
+        <div class="serviceBx">
+          <img src="./images/icon2.png" >
+          <h2>Web Development</h2>
+          <p>Coming soon</p>
+        </div>
+        <div class="serviceBx">
+          <img src="./images/icon3.png" >
+          <h2>Android App</h2>
+          <p>Coming soon</p>
+        </div>
+        <div class="serviceBx">
+          <img src="./images/icon4.png" >
+          <h2>Photos</h2>
+          <p>Coming soon</p>
+        </div>
+        <div class="serviceBx">
+          <img src="./images/icon5.png" >
+          <h2>Content</h2>
+          <p>Coming soon</p>
+        </div>
+        <div class="serviceBx">
+          <img src="./images/icon6.png" >
+          <h2>Video Editing</h2>
+          <p>Coming soon</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="work" id="work">
+      <div class="heading">
+        <h2>Latests Work</h2>
+        <p>IOUwpouwnerpgourweng</p>
+      </div>
+      <div class="content">
+        <div class="workBx">
+          <img src="./images/product1.jpg" >
+        </div>      
+        <div class="content">
+          <div class="workBx">
+            <img src="./images/product2.jpg" >
+          </div>
+        </div>
+        <div class="content">
+          <div class="workBx">
+            <img src="./images/product3.jpg" >
+          </div>
+        </div>
+        <div class="content">
+          <div class="workBx">
+            <img src="./images/product4.jpg" >
+          </div>
+        </div>
+      </div>
+      <div class="heading">
+        <a class="btn" href="https://github.com/DenisNadtoka" target="_blank">View More</a>
+      </div>  
+    </section>
+
+    
+
+
+    <section class="testimonial" id="testimonial">
+      <div class="heading">
+        <h2>Testimonial</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="content">
+        <div class="testimonialBx">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae accusamus ullam necessitatibus assumenda facilis minima modi quisquam labore nisi explicabo atque, eligendi consequatur, mollitia dignissimos exercitationem ipsa cum eaque eius?</p>
+          <h3>Someone Famous<br><span>Creative Designer</span></h3>
+        </div>
+        <div class="testimonialBx">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione tenetur veritatis rem, est debitis iusto iste maxime ex et architecto autem adipisci explicabo totam aspernatur reprehenderit voluptatum ab quia placeat!</p>
+          <h3>Someone Famous<br><span>Creative Designer</span></h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="contactUs" id="contactUs">      
+        <div class="heading">
+          <h2>Contact Us</h2>
+        </div>
+        <div class="content">
+          <div class="contactBx">
+            <h4>Call us</h4>
+            <p><strong>+38-068-088-03-39</strong></p>
+            <p>Monday - Friday</p>
+            <p>10 AM - 8 PM (GMT+3)</p>
+          </div>
+          <div class="contactBx">
+            <h4>Our contact email</h4>
+            <p>denisnadtokam@gmail.com</p>
+          </div>
+          <div class="contactBx">
+            <h4>Social Networks</h4>
+            <a href="#contactUs"><img src="./images/icon_vk.png"></a>
+            <a href="#contactUs"><img src="./images/icon_fb.png"></a>
+            <a href="#contactUs"><img src="./images/icon_instgrm.png"></a>
+            <a href="#contactUs"><img src="./images/icon_yt.png"></a>
+          </div>
+      </div>
+    </section>
+
+    <div class="copyright">
+      <p>Copyright © 2020 USURT</p>
+    </div>
+
+    <script type="text/javascript">      
+      window.addEventListener('scroll', ()=>{
+        let header = document.querySelector('header');
+        header.classList.toggle('sticky', window.scrollY>0);
+      })
+    </script>
+
+  </body>
+</html>
