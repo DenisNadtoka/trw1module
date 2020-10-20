@@ -148,6 +148,10 @@ header.sticky ul li a{
 .services .content .serviceBx:hover{
     background-color: #8B4513;
 }
+.services .content .serviceBx img{
+    max-width: 70px;    
+    filter: invert(1);
+}
 
 .work .content{
     display: flex;
@@ -156,9 +160,9 @@ header.sticky ul li a{
 }
 .work .content .workBx{
     width: 50%;
-    padding: 20px;    
+    padding: 20px;   
 }
-.work .content .workBx .img{
+.work .content .workBx img{
     max-width: 100%;
 }
 
@@ -177,7 +181,7 @@ header.sticky ul li a{
     flex-wrap: wrap;
 }
 .testimonial .content .testimonialBx{
-    max-width: calc(50%-40px);
+    max-width: calc(50% - 40px);
     padding: 60px 40px;
     margin: 20px;
     background: skyblue;
