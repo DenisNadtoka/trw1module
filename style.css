@@ -126,15 +126,14 @@ header.sticky ul li a{
 }
 .services{
     background: #111;
-}
+} 
 .heading.white{
     color: #fff;
 }
-.services .content{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: row;
+.services .content{      
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3, [col-start] 1fr);
 }
 .services .content .serviceBx{
     padding: 40px 20px;
@@ -143,13 +142,13 @@ header.sticky ul li a{
     max-width: 340px;
     margin: 20px;
     text-align: center;
-    transition: 0.5s;
+    transition: 0.5s;    
 }
 .services .content .serviceBx:hover{
     background-color: #8B4513;
 }
 .services .content .serviceBx img{
-    max-width: 70px;    
+    max-width: 80px;
     filter: invert(1);
 }
 
