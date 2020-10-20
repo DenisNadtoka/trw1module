@@ -130,10 +130,11 @@ header.sticky ul li a{
 .heading.white{
     color: #fff;
 }
-.services .content{      
-    display: grid;
-    justify-items: center;
-    grid-template-columns: repeat(3, [col-start] 1fr);
+.services .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;    
 }
 .services .content .serviceBx{
     padding: 40px 20px;
@@ -148,7 +149,7 @@ header.sticky ul li a{
     background-color: #8B4513;
 }
 .services .content .serviceBx img{
-    max-width: 80px;
+    max-width: 80%;
     filter: invert(1);
 }
 
